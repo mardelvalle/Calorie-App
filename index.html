@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="d3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+	<header>
+	</header>
+	<div>
+		<h1>Balanced Meals Made Easy</h1>
+		<h2>Not sure what you should eat today? Use Balanced to figure it out!</h2>
+		<h3>Describe Yourself</h3>
+		<div id="start">
+			<form action="">
+				<label>
+				<input type="radio" name="gender" value="male" id="male"> Male<br>
+				</label>
+				<label>
+				<input type="radio" name="gender" value="female" id="female" > Female<br>
+				</label>
+				<input type="number" placeholder="height (inches)" name="height" id="height" min="4" max="100">
+				<input type="number" placeholder="weight (pounds)" name="weight" id="weight" min="1" max="300">
+				<input type="number" placeholder="age" name="age" id="tester" min="0" max="120">
+				<input type="submit" value="Submit" id="submit">
+			</form>
+			<!-- <button id="enter">Enter</button> -->
+		</div>
+		<div class="dropdown">
+			<h3 class="recommendation">Recommended number calaries for the day:</h3>
+			<button id="back">Back</button>
+			<label for="dropdown-content">Selecion:</label>
+			<!-- <h4>Have you eaten today </h4>
+			<form action="" >
+				<input type="radio" name="meal" value="Yes" class="bu"> Yes<br>
+				<input type="radio" name="meal" value="No" class="bu"> No<br>
+			</form>
+			<h4> What foods</h4>
+			<select id="theComboExample" class="dropdown-content">
+				<option value="">Meal</option>
+				<option value="1">Breakfast</option>
+				<option value="2">Lunch</option>
+				<option value="3">Dinner</option>
+			</select> -->
+			<form id='first'class="" method="post">
+				<input type="text" placeholder="what have you eaten" name="item" id="inputID" value="" class="toEat">
+				<button id="eat" class=consumeFood>Add food</button>
+			</form>
+			<ol id="eaten">
+			</ol>
+			<form id="second" class="" method="post">
+
+				<input type="text" placeholder="any foods you would like to eat" name="item2"id="wantToEat" class="toEat">
+				<button id="possibleEat"class="consumeFood">include</button>
+			</form>
+			<ol id="want">
+			</ol>
+			<h3>Total Calaries</h3>
+			<h4 id="totalConsumed">0</h4>
+			<h4 id="additionalCon">0</h4>
+			<h4 id="remainder"></h4>
+			<!-- <button id="see" >See Recommendations</button> -->
+			<h3> nutritain information</h3>
+
+		</div>
+
+	</div>
+	<div>
+	</div>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+	<script src="jser.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>
